@@ -34,3 +34,6 @@ const mynewCar = {
 const myUpdatedCar = { ...myCar, ...mynewCar }
 console.log(myUpdatedCar);
 
+const newObject = { ..."abcdefghijklmnopqrstuvwxyz" }
+console.log(newObject);
+
