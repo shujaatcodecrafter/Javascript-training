@@ -30,6 +30,7 @@ console.log(person);
 
 
 //how to iterate object
+
 const person2 = {
     name: "abc",
     age: 35,
