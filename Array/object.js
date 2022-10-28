@@ -28,7 +28,6 @@ person.gender = "male";
 console.log(person);
 
 
-
 //how to iterate object
 
 const person2 = {
