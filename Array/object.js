@@ -23,7 +23,7 @@ console.log(person.hobbies);
 
 
 
-//how to ad key value pair to objects
+//how to add key value pair to objects
 person.gender = "male";
 console.log(person);
 
@@ -45,3 +45,18 @@ for (let key in person2) {
 }
 
 console.log(Object.keys(person2));
+
+
+
+// Objects inside array
+//very useful in real world applications
+
+const users = [
+    { userId: 1, firstName: 'rupesh', gender: "male", city: "noida" },
+    { userId: 2, firstName: 'mohit', gender: "male", city: "delhi" },
+    { userId: 3, firstName: 'aakash', gender: "male", city: "pune" }
+]
+// console.log(users);
+for (let user of users) {
+    console.log(user.firstName)
+}
