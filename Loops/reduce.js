@@ -14,4 +14,15 @@ function myFunc(total, num) {
     return total + num;
 }
 
+const numbers = [2, 3, 4, 6, 12, 1]
+const sum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator, currentValue;
+})
+console.log(sum);
 
+// accumulator     currentValue  result
+        // 2             3            5
+        // 5              4           9
+        // 9             6            15
+        // 15            12           27
+        // 27             1           28
