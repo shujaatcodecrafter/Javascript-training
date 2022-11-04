@@ -34,3 +34,12 @@ console.log(unique);
 //         index) => numbers.indexOf(num) === index);
 // }
 // console.log(removeDuplicatNumbers(numbers));
+
+
+const employeName = ["John", "Andy", "Rupesh", "Amit", "Rupesh", "Ali", "John"];
+
+const uniqueName = employeName.filter((value, index) => {
+    console.log(value, index);
+    return employeName.indexOf(value) === index;
+})
+console.log(uniqueName);
