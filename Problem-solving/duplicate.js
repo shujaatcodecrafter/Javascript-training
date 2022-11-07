@@ -7,14 +7,23 @@
 
 const fruitList = ["orange", "mango", "apple", "mango", "pineapple", "apple"];
 
-// let newUniqueItem = [... new Set(fruitList)];
-// console.log(newUniqueItem);
+let newUniqueItem = [... new Set(fruitList)];
+console.log(newUniqueItem);
 
+// --------------------------------------------------------
 function removeDuplicate(fruitList) {
     return fruitList.filter((fruits,
         index) => fruitList.indexOf(fruits) === (index));
 }
 console.log(removeDuplicate(fruitList));
+
+// -------------------------------------------------------------------
+
+const uniqueFruitList = fruitList.filter((value, index) => {
+    console.log(value, index);
+    return fruitList.indexOf(value) === index;
+});
+console.log(uniqueFruitList);
 
 
 
@@ -43,3 +52,4 @@ const uniqueName = employeName.filter((value, index) => {
     return employeName.indexOf(value) === index;
 })
 console.log(uniqueName);
+
