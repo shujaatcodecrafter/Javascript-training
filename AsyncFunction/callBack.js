@@ -19,35 +19,35 @@ const heading7 = document.querySelector(".heading7");
 // six        3s      blue
 // seven      1s      brown
 
-//callback hell 
-// setTimeout(() => {
-//     heading1.textContent = "One"
-//     heading1.style.color = "violet"
-//     setTimeout(() => {
-//         heading2.textContent = "Heading 2"
-//         heading2.style.color = "purple";
-//         setTimeout(() => {
-//             heading3.textContent = "Three"
-//             heading3.style.color = "red";
-//             setTimeout(() => {
-//                 heading4.textContent = "Four";
-//                 heading4.style.color = "pink";
-//                 setTimeout(() => {
-//                     heading5.textContent = "Five"
-//                     heading5.style.color = "green";
-//                     setTimeout(() => {
-//                         heading6.textContent = "Six";
-//                         heading6.style.color = "blue";
-//                         setTimeout(() => {
-//                             heading7.textContent = "Seven";
-//                             heading7.style.color = "brown";
-//                         }, 1000)
-//                     }, 3000)
-//                 }, 2000)
-//             }, 1000)
-//         }, 2000)
-//     }, 1000)
-// }, 2000);
+// callback hell 
+setTimeout(() => {
+    heading1.textContent = "One"
+    heading1.style.color = "violet"
+    setTimeout(() => {
+        heading2.textContent = "Heading 2"
+        heading2.style.color = "purple";
+        setTimeout(() => {
+            heading3.textContent = "Three"
+            heading3.style.color = "red";
+            setTimeout(() => {
+                heading4.textContent = "Four";
+                heading4.style.color = "pink";
+                setTimeout(() => {
+                    heading5.textContent = "Five"
+                    heading5.style.color = "green";
+                    setTimeout(() => {
+                        heading6.textContent = "Six";
+                        heading6.style.color = "blue";
+                        setTimeout(() => {
+                            heading7.textContent = "Seven";
+                            heading7.style.color = "brown";
+                        }, 1000)
+                    }, 3000)
+                }, 2000)
+            }, 1000)
+        }, 2000)
+    }, 1000)
+}, 2000);
 
 function changeText(element, text, color, time, onSuccessCallback, onFailureCallback) {
     setTimeout(() => {
