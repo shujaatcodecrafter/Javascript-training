@@ -70,9 +70,13 @@ const p5 = new Promise((resolve, reject) => {
 //     reject(new Error("reject"));
 // });
 
-// // Using .catch:
+
 Promise.all([p1, p2, p3, p4, p5])
+    // Promise.allSettled([p1, p2, p3, p4, p5, p6])
     // Promise.all([p1, p2, p3, p4, p5, p6])
+    // Promise.race([p1, p2, p3, p4, p5])
+    // Promise.any([p1, p2, p3, p4, p5])
+    // // Using .catch:
     .then((values) => {
         console.log(values);
     })
@@ -88,23 +92,25 @@ Promise.all([p1, p2, p3, p4, p5])
 let first_promise = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("Resolved First after 1 second");
-    }, 1000);
+    }, 11000);
 });
 
 let second_promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve("Resolved First after 2 seconds");
+        resolve("Resolved second after 2 seconds");
     }, 2000);
 });
 
 let third_promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve("Resolved First after 3 seconds");
+        resolve("Resolved Three after 3 seconds");
     }, 3000);
 });
 
 try {
-    let result = Promise.all([first_promise, second_promise, third_promise]);
+    // let result = Promise.all([first_promise, second_promise, third_promise]);
+    // let result = Promise.race([first_promise, second_promise, third_promise]);
+    let result = Promise.any([first_promise, second_promise, third_promise]);
     result.then((data) => console.log(data));
 } catch (error) {
     console.log(error);
